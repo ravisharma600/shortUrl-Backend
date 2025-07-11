@@ -32,6 +32,7 @@ Setup:
 API Endpoints:
 
 POST /shorten 
+
   Creates a new short URL.
   Request:
   {
@@ -45,6 +46,7 @@ POST /shorten
   "http://localhost:3000/O70KTcP"
   
 GET /:code
+
   Redirects the user to the full URL if valid and not expired.
   Example:
     GET http://localhost:3000/O70KTcP
@@ -54,6 +56,7 @@ GET /:code
 Postman Collection:
 
   For POST /shorten
+  
     body - raw
     contentType-JSON
     Example:
@@ -62,6 +65,7 @@ Postman Collection:
       "expireAt":"2025-07-11T15:06:00.000Z"
     }
   For GET/:code
+  
     url - http://localhost:3000/<code>
     Example:
        http://localhost:3000/TpmkfgV
