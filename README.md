@@ -12,7 +12,7 @@ Features
 - Click tracking (`clicks`)
 - Expiry time for each short URL
 - MongoDB TTL index to auto-delete expired links
-- Rate limiting to prevent abuse
+- Rate limiting to prevent abuse (/shorten - max 5 short urls per 15 min and for /:code max 60 redirects per minute)
 - Input validation for both URLs and expiry dates
 
 Setup:
